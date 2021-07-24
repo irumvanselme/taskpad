@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "functions/print-help.cpp"
+#include "functions/print-help.h"
 
 int main(int argc, char *argv[]) {
 
