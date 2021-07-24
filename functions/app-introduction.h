@@ -13,6 +13,6 @@ void printAppIntroduction () {
     cout << R"(        /_/\____/____/_/  )_)/ .___/\____/\____/)" << endl;
     cout << "                            /_/    " << endl;
     cout << endl << endl;
-    cout << "Taskpad: A note taking command line application .." << endl << endl;
+    cout << "  Taskpad: A note taking command line application .." << endl << endl;
 }
 

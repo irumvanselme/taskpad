@@ -1,10 +1,11 @@
-#include <iostream>
+//
+// Created by anselme on 2021-07-24.
+//
 
-#include "./app-introduction.h"
-
-using namespace std;
+#include "../app/header.cpp"
 
 void printHelp(){
-    printAppIntroduction();
-    cout << "I am going to print help ..." << endl;
+    cout << "  Help : " << endl;
+    cout << "    --new [Todo name] : Create a new todo" << endl;
+    cout << "    --all             : Show all todos" << endl << endl;
 }
