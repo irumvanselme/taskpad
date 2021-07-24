@@ -1,6 +1,10 @@
 #include <iostream>
+
+#include "./app-introduction.h"
+
 using namespace std;
 
 void printHelp(){
-    cout << "I am the Hello world ";
+    printAppIntroduction();
+    cout << "I am going to print help ..." << endl;
 }
