@@ -1,7 +1,10 @@
-#include "app-header.cpp"
+#include <iostream>
+using namespace std;
+
+#include "functions/print-help.cpp"
 
 int main(int argc, char *argv[]) {
-    cout << "Hello world ";
 
+    printHelp();
     return 0;
 }
