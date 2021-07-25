@@ -2,7 +2,6 @@
 // Created by anselme on 2021-07-24.
 //
 
-#include "../app/header.cpp"
 
 void printHelp(){
     cout << "  Help : " << endl;

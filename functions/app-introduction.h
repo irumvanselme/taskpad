@@ -2,8 +2,6 @@
 // Created by anselme on 2021-07-24.
 //
 
-#include "../app/header.cpp"
-
 void printAppIntroduction () {
     cout << "        ___________       __                      __" << endl;
     cout << "       /____  ____/      / /                     / /" << endl;
