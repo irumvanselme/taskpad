@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 #include "app/header.h"
 
 #include "functions/app-introduction.h"
@@ -10,25 +7,27 @@ using namespace std;
 #include "functions/all-todos.h"
 
 int main(int argc, char *argv[]) {
-    system("clear");
     // print application introduction ...
+
+    const vector<string> args(argv+1,argv+argc);
     printAppIntroduction();
 
-    Commands request = handleCommand(argv);
+    if(argc > 1) {
+        Commands request = handleCommand(args[0]);
 
-    switch (request) {
-        case NEW_TODO:
-            newTodo(argv[3]);
-            break;
-        case SHOW_ALL:
-            allTodos();
-            break;
-        default:
-            printHelp();
-            break;
+        switch (request) {
+            case NEW_TODO:
+                newTodo(argv[1]);
+                break;
+            case SHOW_ALL:
+                allTodos();
+                break;
+            default:
+                printHelp();
+        }
+    }else {
+        printHelp();
     }
 
-
-    printHelp();
     return 0;
 }
