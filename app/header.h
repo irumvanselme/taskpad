@@ -3,6 +3,9 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <cstring>
+
 using namespace std;
 
 #include "../constants/commands.h"
